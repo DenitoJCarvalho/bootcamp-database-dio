@@ -1,0 +1,98 @@
+/* cooding: utf-8 */
+
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Comic Neue', cursive;
+}
+
+body, html {
+  width: 100vw;
+  height: 100vh;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 1);
+  color: rgba(245, 245, 245, 0.905);
+  overflow-x: hidden;
+}
+
+:is(.container-header, .container-header h1) {
+   display: flex;
+   flex-flow: row wrap;
+   justify-content: right;
+   padding: 0 2rem;
+}
+
+.container-header {
+  width: 100%;
+  height: 30rem;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  background: url('https://hermes.digitalinnovation.one/tracks/7df7e300-b035-4b09-a7ad-34d1cb18f9a6.png') no-repeat 10% 0% / contain;
+  background-origin: padding-box;
+}
+
+.container-header h1 {
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  font-size:6rem;
+}
+
+.container-projects {
+  width: 100%;
+  height: 15rem;
+  padding: 0 2rem;
+}
+
+.container-projects ul {
+  width: 100%;
+  list-style-type: none;
+}
+
+.container-projects ul {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.container-projects ul li {
+  border: 1px solid white;
+  width: auto;
+  height: auto;
+  padding: 1rem;
+  margin-left: 1rem;
+  border-radius: 0.5rem;
+}
+
+.container-projects ul li a {
+  color: rgba(245, 245, 245, 0.905);
+  text-decoration: none;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+}
+
+.container-projects ul li:hover {
+  background-color: rgb(243 145 16);
+  border: none;
+}
+
+.container-projects ul li:hover > a {
+  filter: brightness(1.5);
+}
+
+footer {
+  text-align: center;
+}
+
+footer small strong {
+  text-align: center;
+}
